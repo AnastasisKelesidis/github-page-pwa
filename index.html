@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grafana Dashboard through GitHub page as PWA </title>
+
+
+  <link rel="canonical" href="https://AnastasisKelesidis.github.io/github-page-pwa/" /> 
+  <!-- replace "skorpinakos" with your github username while "github-page-pwa" will be the title of the repo used -->           
+  <link rel="manifest" href="/github-page-pwa/manifest.json">
+  <style>
+    .shrink-iframe {
+      transform: scale(0.5); /* Adjust the scaling factor to the size you want */
+      transform-origin: 0 0; /* Ensure the iframe shrinks from the top-left corner */
+      width: 750px; /* Adjust the iframe width to match the scale */
+      height: 450px; /* Adjust the iframe height to match the scale */
+    }
+  </style>
+
+</head>
+<body>
+  <h1>Dashboard </h1>
+  <iframe
+    src="https://labserver.sense-campus.gr:8087/dashboard/new?from=2024-11-21T14:59:24.159Z&to=2024-11-21T15:09:58.633Z&timezone=browser&viewPanel=panel-1"
+    class="shrink-iframe"
+  ></iframe>
+  <script>
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register (
+          '/github-page-pwa/sw.js',
+          {scope: '/github-page-pwa/'}
+        )
+      }
+  </script>
+</body>
+</html>

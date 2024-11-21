@@ -1,0 +1,7 @@
+endpoint=http://150.140.186.118:8086/
+ui_username=student
+ui_password=studentpassword
+influxdb_version=2.1.1
+org=students
+write_token = "wHVDMadRacKSgoxT_FehbhfU3RIm8NpJPbvm19B1uKwWg-8yLmIovIMoQ5psHc5CZryytDxnHGr29pCDETvSPg=="
+readonly_token = "5wAXz_t5pcB2MfRfit0IKz1-F3SlMUZztm_6XV-vRUSjzuMmUtAilUOov2Uim1p28MjyRorVT9rTbiWzjZ6V4g=="
